@@ -1,2 +1,4 @@
 /__pycache__
-/g2g/__pycache__
+/g2g/__pycache__/
+*.pyc
+*.pyo
