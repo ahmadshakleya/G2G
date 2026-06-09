@@ -2,3 +2,6 @@
 /g2g/__pycache__/
 *.pyc
 *.pyo
+build/
+*.o
+*.a

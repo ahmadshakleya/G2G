@@ -1,5 +1,0 @@
-if(EXISTS "/home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/tests/test_align[1]_tests.cmake")
-  include("/home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/tests/test_align[1]_tests.cmake")
-else()
-  add_test(test_align_NOT_BUILT test_align_NOT_BUILT)
-endif()
