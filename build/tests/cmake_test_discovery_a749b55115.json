@@ -1,0 +1,68 @@
+{
+  "tests": 10,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "EditDistance",
+      "tests": 5,
+      "testsuite": [
+        {
+          "name": "IdenticalStrings",
+          "file": "\/home\/shaklea\/Research\/G2G\/G2G_Project_Summer_2026\/tests\/test_sequence.cpp",
+          "line": 18
+        },
+        {
+          "name": "EmptyVsNonEmpty",
+          "file": "\/home\/shaklea\/Research\/G2G\/G2G_Project_Summer_2026\/tests\/test_sequence.cpp",
+          "line": 23
+        },
+        {
+          "name": "SingleSubstitution",
+          "file": "\/home\/shaklea\/Research\/G2G\/G2G_Project_Summer_2026\/tests\/test_sequence.cpp",
+          "line": 28
+        },
+        {
+          "name": "Insertion",
+          "file": "\/home\/shaklea\/Research\/G2G\/G2G_Project_Summer_2026\/tests\/test_sequence.cpp",
+          "line": 33
+        },
+        {
+          "name": "DemoGraphAlleles",
+          "file": "\/home\/shaklea\/Research\/G2G\/G2G_Project_Summer_2026\/tests\/test_sequence.cpp",
+          "line": 37
+        }
+      ]
+    },
+    {
+      "name": "SeqSimilarity",
+      "tests": 5,
+      "testsuite": [
+        {
+          "name": "BothEmpty",
+          "file": "\/home\/shaklea\/Research\/G2G\/G2G_Project_Summer_2026\/tests\/test_sequence.cpp",
+          "line": 47
+        },
+        {
+          "name": "Identical",
+          "file": "\/home\/shaklea\/Research\/G2G\/G2G_Project_Summer_2026\/tests\/test_sequence.cpp",
+          "line": 51
+        },
+        {
+          "name": "OneSubstitution",
+          "file": "\/home\/shaklea\/Research\/G2G\/G2G_Project_Summer_2026\/tests\/test_sequence.cpp",
+          "line": 55
+        },
+        {
+          "name": "AnchorNodes",
+          "file": "\/home\/shaklea\/Research\/G2G\/G2G_Project_Summer_2026\/tests\/test_sequence.cpp",
+          "line": 60
+        },
+        {
+          "name": "GATTACAdeletion",
+          "file": "\/home\/shaklea\/Research\/G2G\/G2G_Project_Summer_2026\/tests\/test_sequence.cpp",
+          "line": 67
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+/home/shaklea/miniconda3/envs/phase3/bin/x86_64-conda-linux-gnu-ar qc libg2g_lib.a CMakeFiles/g2g_lib.dir/src/graph.cpp.o CMakeFiles/g2g_lib.dir/src/sequence.cpp.o CMakeFiles/g2g_lib.dir/src/decompose.cpp.o CMakeFiles/g2g_lib.dir/src/anchor.cpp.o CMakeFiles/g2g_lib.dir/src/matching.cpp.o CMakeFiles/g2g_lib.dir/src/align.cpp.o CMakeFiles/g2g_lib.dir/src/io.cpp.o
+/home/shaklea/miniconda3/envs/phase3/bin/x86_64-conda-linux-gnu-ranlib libg2g_lib.a

@@ -1,0 +1,37 @@
+{
+  "tests": 5,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "DemoAlignTest",
+      "tests": 5,
+      "testsuite": [
+        {
+          "name": "FindsAtLeastTwoAnchors",
+          "file": "\/home\/shaklea\/Research\/G2G\/G2G_Project_Summer_2026\/tests\/test_align.cpp",
+          "line": 84
+        },
+        {
+          "name": "AlignsTwoSnarlPairs",
+          "file": "\/home\/shaklea\/Research\/G2G\/G2G_Project_Summer_2026\/tests\/test_align.cpp",
+          "line": 89
+        },
+        {
+          "name": "TotalScorePositive",
+          "file": "\/home\/shaklea\/Research\/G2G\/G2G_Project_Summer_2026\/tests\/test_align.cpp",
+          "line": 94
+        },
+        {
+          "name": "CTTAGGAATCGisAOnly",
+          "file": "\/home\/shaklea\/Research\/G2G\/G2G_Project_Summer_2026\/tests\/test_align.cpp",
+          "line": 98
+        },
+        {
+          "name": "GATTACisBOnly",
+          "file": "\/home\/shaklea\/Research\/G2G\/G2G_Project_Summer_2026\/tests\/test_align.cpp",
+          "line": 106
+        }
+      ]
+    }
+  ]
+}

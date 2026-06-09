@@ -1,0 +1,568 @@
+Start testing: Jun 08 09:27 +03
+----------------------------------------------------------
+1/20 Testing: EditDistance.IdenticalStrings
+1/20 Test: EditDistance.IdenticalStrings
+Command: "/home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/tests/test_sequence" "--gtest_filter=EditDistance.IdenticalStrings" "--gtest_also_run_disabled_tests"
+Directory: /home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/tests
+"EditDistance.IdenticalStrings" start time: Jun 08 09:27 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EditDistance.IdenticalStrings
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EditDistance
+[ RUN      ] EditDistance.IdenticalStrings
+[       OK ] EditDistance.IdenticalStrings (0 ms)
+[----------] 1 test from EditDistance (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"EditDistance.IdenticalStrings" end time: Jun 08 09:27 +03
+"EditDistance.IdenticalStrings" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/20 Testing: EditDistance.EmptyVsNonEmpty
+2/20 Test: EditDistance.EmptyVsNonEmpty
+Command: "/home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/tests/test_sequence" "--gtest_filter=EditDistance.EmptyVsNonEmpty" "--gtest_also_run_disabled_tests"
+Directory: /home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/tests
+"EditDistance.EmptyVsNonEmpty" start time: Jun 08 09:27 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EditDistance.EmptyVsNonEmpty
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EditDistance
+[ RUN      ] EditDistance.EmptyVsNonEmpty
+[       OK ] EditDistance.EmptyVsNonEmpty (0 ms)
+[----------] 1 test from EditDistance (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"EditDistance.EmptyVsNonEmpty" end time: Jun 08 09:27 +03
+"EditDistance.EmptyVsNonEmpty" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/20 Testing: EditDistance.SingleSubstitution
+3/20 Test: EditDistance.SingleSubstitution
+Command: "/home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/tests/test_sequence" "--gtest_filter=EditDistance.SingleSubstitution" "--gtest_also_run_disabled_tests"
+Directory: /home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/tests
+"EditDistance.SingleSubstitution" start time: Jun 08 09:27 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EditDistance.SingleSubstitution
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EditDistance
+[ RUN      ] EditDistance.SingleSubstitution
+[       OK ] EditDistance.SingleSubstitution (0 ms)
+[----------] 1 test from EditDistance (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"EditDistance.SingleSubstitution" end time: Jun 08 09:27 +03
+"EditDistance.SingleSubstitution" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/20 Testing: EditDistance.Insertion
+4/20 Test: EditDistance.Insertion
+Command: "/home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/tests/test_sequence" "--gtest_filter=EditDistance.Insertion" "--gtest_also_run_disabled_tests"
+Directory: /home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/tests
+"EditDistance.Insertion" start time: Jun 08 09:27 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EditDistance.Insertion
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EditDistance
+[ RUN      ] EditDistance.Insertion
+[       OK ] EditDistance.Insertion (0 ms)
+[----------] 1 test from EditDistance (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"EditDistance.Insertion" end time: Jun 08 09:27 +03
+"EditDistance.Insertion" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/20 Testing: EditDistance.DemoGraphAlleles
+5/20 Test: EditDistance.DemoGraphAlleles
+Command: "/home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/tests/test_sequence" "--gtest_filter=EditDistance.DemoGraphAlleles" "--gtest_also_run_disabled_tests"
+Directory: /home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/tests
+"EditDistance.DemoGraphAlleles" start time: Jun 08 09:27 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EditDistance.DemoGraphAlleles
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EditDistance
+[ RUN      ] EditDistance.DemoGraphAlleles
+[       OK ] EditDistance.DemoGraphAlleles (0 ms)
+[----------] 1 test from EditDistance (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"EditDistance.DemoGraphAlleles" end time: Jun 08 09:27 +03
+"EditDistance.DemoGraphAlleles" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/20 Testing: SeqSimilarity.BothEmpty
+6/20 Test: SeqSimilarity.BothEmpty
+Command: "/home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/tests/test_sequence" "--gtest_filter=SeqSimilarity.BothEmpty" "--gtest_also_run_disabled_tests"
+Directory: /home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/tests
+"SeqSimilarity.BothEmpty" start time: Jun 08 09:27 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SeqSimilarity.BothEmpty
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SeqSimilarity
+[ RUN      ] SeqSimilarity.BothEmpty
+[       OK ] SeqSimilarity.BothEmpty (0 ms)
+[----------] 1 test from SeqSimilarity (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"SeqSimilarity.BothEmpty" end time: Jun 08 09:27 +03
+"SeqSimilarity.BothEmpty" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/20 Testing: SeqSimilarity.Identical
+7/20 Test: SeqSimilarity.Identical
+Command: "/home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/tests/test_sequence" "--gtest_filter=SeqSimilarity.Identical" "--gtest_also_run_disabled_tests"
+Directory: /home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/tests
+"SeqSimilarity.Identical" start time: Jun 08 09:27 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SeqSimilarity.Identical
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SeqSimilarity
+[ RUN      ] SeqSimilarity.Identical
+[       OK ] SeqSimilarity.Identical (0 ms)
+[----------] 1 test from SeqSimilarity (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"SeqSimilarity.Identical" end time: Jun 08 09:27 +03
+"SeqSimilarity.Identical" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/20 Testing: SeqSimilarity.OneSubstitution
+8/20 Test: SeqSimilarity.OneSubstitution
+Command: "/home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/tests/test_sequence" "--gtest_filter=SeqSimilarity.OneSubstitution" "--gtest_also_run_disabled_tests"
+Directory: /home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/tests
+"SeqSimilarity.OneSubstitution" start time: Jun 08 09:27 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SeqSimilarity.OneSubstitution
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SeqSimilarity
+[ RUN      ] SeqSimilarity.OneSubstitution
+[       OK ] SeqSimilarity.OneSubstitution (0 ms)
+[----------] 1 test from SeqSimilarity (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"SeqSimilarity.OneSubstitution" end time: Jun 08 09:27 +03
+"SeqSimilarity.OneSubstitution" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/20 Testing: SeqSimilarity.AnchorNodes
+9/20 Test: SeqSimilarity.AnchorNodes
+Command: "/home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/tests/test_sequence" "--gtest_filter=SeqSimilarity.AnchorNodes" "--gtest_also_run_disabled_tests"
+Directory: /home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/tests
+"SeqSimilarity.AnchorNodes" start time: Jun 08 09:27 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SeqSimilarity.AnchorNodes
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SeqSimilarity
+[ RUN      ] SeqSimilarity.AnchorNodes
+[       OK ] SeqSimilarity.AnchorNodes (0 ms)
+[----------] 1 test from SeqSimilarity (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"SeqSimilarity.AnchorNodes" end time: Jun 08 09:27 +03
+"SeqSimilarity.AnchorNodes" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/20 Testing: SeqSimilarity.GATTACAdeletion
+10/20 Test: SeqSimilarity.GATTACAdeletion
+Command: "/home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/tests/test_sequence" "--gtest_filter=SeqSimilarity.GATTACAdeletion" "--gtest_also_run_disabled_tests"
+Directory: /home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/tests
+"SeqSimilarity.GATTACAdeletion" start time: Jun 08 09:27 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SeqSimilarity.GATTACAdeletion
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SeqSimilarity
+[ RUN      ] SeqSimilarity.GATTACAdeletion
+[       OK ] SeqSimilarity.GATTACAdeletion (0 ms)
+[----------] 1 test from SeqSimilarity (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"SeqSimilarity.GATTACAdeletion" end time: Jun 08 09:27 +03
+"SeqSimilarity.GATTACAdeletion" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/20 Testing: Matching.SNPBubble_k2
+11/20 Test: Matching.SNPBubble_k2
+Command: "/home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/tests/test_matching" "--gtest_filter=Matching.SNPBubble_k2" "--gtest_also_run_disabled_tests"
+Directory: /home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/tests
+"Matching.SNPBubble_k2" start time: Jun 08 09:27 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Matching.SNPBubble_k2
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Matching
+[ RUN      ] Matching.SNPBubble_k2
+[       OK ] Matching.SNPBubble_k2 (0 ms)
+[----------] 1 test from Matching (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"Matching.SNPBubble_k2" end time: Jun 08 09:27 +03
+"Matching.SNPBubble_k2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/20 Testing: Matching.InsertionBubble_k3
+12/20 Test: Matching.InsertionBubble_k3
+Command: "/home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/tests/test_matching" "--gtest_filter=Matching.InsertionBubble_k3" "--gtest_also_run_disabled_tests"
+Directory: /home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/tests
+"Matching.InsertionBubble_k3" start time: Jun 08 09:27 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Matching.InsertionBubble_k3
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Matching
+[ RUN      ] Matching.InsertionBubble_k3
+[       OK ] Matching.InsertionBubble_k3 (0 ms)
+[----------] 1 test from Matching (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Matching.InsertionBubble_k3" end time: Jun 08 09:27 +03
+"Matching.InsertionBubble_k3" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/20 Testing: Matching.Symmetry
+13/20 Test: Matching.Symmetry
+Command: "/home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/tests/test_matching" "--gtest_filter=Matching.Symmetry" "--gtest_also_run_disabled_tests"
+Directory: /home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/tests
+"Matching.Symmetry" start time: Jun 08 09:27 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Matching.Symmetry
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Matching
+[ RUN      ] Matching.Symmetry
+[       OK ] Matching.Symmetry (0 ms)
+[----------] 1 test from Matching (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"Matching.Symmetry" end time: Jun 08 09:27 +03
+"Matching.Symmetry" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/20 Testing: Matching.HungarianMatchesBrute_k2
+14/20 Test: Matching.HungarianMatchesBrute_k2
+Command: "/home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/tests/test_matching" "--gtest_filter=Matching.HungarianMatchesBrute_k2" "--gtest_also_run_disabled_tests"
+Directory: /home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/tests
+"Matching.HungarianMatchesBrute_k2" start time: Jun 08 09:27 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Matching.HungarianMatchesBrute_k2
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Matching
+[ RUN      ] Matching.HungarianMatchesBrute_k2
+[       OK ] Matching.HungarianMatchesBrute_k2 (0 ms)
+[----------] 1 test from Matching (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"Matching.HungarianMatchesBrute_k2" end time: Jun 08 09:27 +03
+"Matching.HungarianMatchesBrute_k2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/20 Testing: DemoAlignTest.FindsAtLeastTwoAnchors
+15/20 Test: DemoAlignTest.FindsAtLeastTwoAnchors
+Command: "/home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/tests/test_align" "--gtest_filter=DemoAlignTest.FindsAtLeastTwoAnchors" "--gtest_also_run_disabled_tests"
+Directory: /home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/tests
+"DemoAlignTest.FindsAtLeastTwoAnchors" start time: Jun 08 09:27 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = DemoAlignTest.FindsAtLeastTwoAnchors
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DemoAlignTest
+[ RUN      ] DemoAlignTest.FindsAtLeastTwoAnchors
+/home/shaklea/Research/G2G/G2G_Project_Summer_2026/tests/test_align.cpp:86: Failure
+Expected: (result_.anchors.size()) >= (2u), actual: 0 vs 2
+
+[  FAILED  ] DemoAlignTest.FindsAtLeastTwoAnchors (1 ms)
+[----------] 1 test from DemoAlignTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] DemoAlignTest.FindsAtLeastTwoAnchors
+
+ 1 FAILED TEST
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Failed.
+"DemoAlignTest.FindsAtLeastTwoAnchors" end time: Jun 08 09:27 +03
+"DemoAlignTest.FindsAtLeastTwoAnchors" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/20 Testing: DemoAlignTest.AlignsTwoSnarlPairs
+16/20 Test: DemoAlignTest.AlignsTwoSnarlPairs
+Command: "/home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/tests/test_align" "--gtest_filter=DemoAlignTest.AlignsTwoSnarlPairs" "--gtest_also_run_disabled_tests"
+Directory: /home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/tests
+"DemoAlignTest.AlignsTwoSnarlPairs" start time: Jun 08 09:27 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = DemoAlignTest.AlignsTwoSnarlPairs
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DemoAlignTest
+[ RUN      ] DemoAlignTest.AlignsTwoSnarlPairs
+/home/shaklea/Research/G2G/G2G_Project_Summer_2026/tests/test_align.cpp:91: Failure
+Expected equality of these values:
+  result_.snarl_alignments.size()
+    Which is: 0
+  2u
+    Which is: 2
+
+[  FAILED  ] DemoAlignTest.AlignsTwoSnarlPairs (1 ms)
+[----------] 1 test from DemoAlignTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] DemoAlignTest.AlignsTwoSnarlPairs
+
+ 1 FAILED TEST
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Failed.
+"DemoAlignTest.AlignsTwoSnarlPairs" end time: Jun 08 09:27 +03
+"DemoAlignTest.AlignsTwoSnarlPairs" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/20 Testing: DemoAlignTest.TotalScorePositive
+17/20 Test: DemoAlignTest.TotalScorePositive
+Command: "/home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/tests/test_align" "--gtest_filter=DemoAlignTest.TotalScorePositive" "--gtest_also_run_disabled_tests"
+Directory: /home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/tests
+"DemoAlignTest.TotalScorePositive" start time: Jun 08 09:27 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = DemoAlignTest.TotalScorePositive
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DemoAlignTest
+[ RUN      ] DemoAlignTest.TotalScorePositive
+/home/shaklea/Research/G2G/G2G_Project_Summer_2026/tests/test_align.cpp:95: Failure
+Expected: (result_.total_score) > (0.f), actual: 0 vs 0
+
+[  FAILED  ] DemoAlignTest.TotalScorePositive (1 ms)
+[----------] 1 test from DemoAlignTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] DemoAlignTest.TotalScorePositive
+
+ 1 FAILED TEST
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Failed.
+"DemoAlignTest.TotalScorePositive" end time: Jun 08 09:27 +03
+"DemoAlignTest.TotalScorePositive" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/20 Testing: DemoAlignTest.CTTAGGAATCGisAOnly
+18/20 Test: DemoAlignTest.CTTAGGAATCGisAOnly
+Command: "/home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/tests/test_align" "--gtest_filter=DemoAlignTest.CTTAGGAATCGisAOnly" "--gtest_also_run_disabled_tests"
+Directory: /home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/tests
+"DemoAlignTest.CTTAGGAATCGisAOnly" start time: Jun 08 09:27 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = DemoAlignTest.CTTAGGAATCGisAOnly
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DemoAlignTest
+[ RUN      ] DemoAlignTest.CTTAGGAATCGisAOnly
+[       OK ] DemoAlignTest.CTTAGGAATCGisAOnly (1 ms)
+[----------] 1 test from DemoAlignTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"DemoAlignTest.CTTAGGAATCGisAOnly" end time: Jun 08 09:27 +03
+"DemoAlignTest.CTTAGGAATCGisAOnly" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/20 Testing: DemoAlignTest.GATTACisBOnly
+19/20 Test: DemoAlignTest.GATTACisBOnly
+Command: "/home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/tests/test_align" "--gtest_filter=DemoAlignTest.GATTACisBOnly" "--gtest_also_run_disabled_tests"
+Directory: /home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/tests
+"DemoAlignTest.GATTACisBOnly" start time: Jun 08 09:27 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = DemoAlignTest.GATTACisBOnly
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DemoAlignTest
+[ RUN      ] DemoAlignTest.GATTACisBOnly
+[       OK ] DemoAlignTest.GATTACisBOnly (1 ms)
+[----------] 1 test from DemoAlignTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"DemoAlignTest.GATTACisBOnly" end time: Jun 08 09:27 +03
+"DemoAlignTest.GATTACisBOnly" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/20 Testing: Decompose.Placeholder
+20/20 Test: Decompose.Placeholder
+Command: "/home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/tests/test_decompose" "--gtest_filter=Decompose.Placeholder" "--gtest_also_run_disabled_tests"
+Directory: /home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/tests
+"Decompose.Placeholder" start time: Jun 08 09:27 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/shaklea/Research/G2G/G2G_Project_Summer_2026/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Decompose.Placeholder
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Decompose
+[ RUN      ] Decompose.Placeholder
+[       OK ] Decompose.Placeholder (0 ms)
+[----------] 1 test from Decompose (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"Decompose.Placeholder" end time: Jun 08 09:27 +03
+"Decompose.Placeholder" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jun 08 09:27 +03
