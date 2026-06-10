@@ -148,9 +148,27 @@ SnarlTree SnarlDecomposer::decompose() const {
     for (const auto& iset : interiors)
         all_interiors.insert(iset.begin(), iset.end());
 
-    for (const auto& r : raw)
-        if (all_interiors.find(r.snarl.source) == all_interiors.end())
-            tree.snarls.push_back(r.snarl);
+    // Build flat allele-path store for top-level snarls (P3-6).
+    // For each accepted snarl, append its allele paths into the flat arrays
+    // and set alleles_begin/end on the Snarl to index into those arrays.
+    uint32_t flat_allele_idx = 0;
+    for (auto& r : raw) {
+        if (all_interiors.find(r.snarl.source) != all_interiors.end()) continue;
+
+        r.snarl.alleles_begin = flat_allele_idx;
+        r.snarl.alleles_end   = flat_allele_idx + static_cast<uint32_t>(r.alleles.size());
+
+        for (const auto& path : r.alleles) {
+            tree.allele_path_offsets.push_back(
+                static_cast<uint32_t>(tree.allele_paths_data.size()));
+            tree.allele_path_lengths.push_back(
+                static_cast<uint32_t>(path.size()));
+            tree.allele_paths_data.insert(tree.allele_paths_data.end(),
+                                          path.begin(), path.end());
+        }
+        flat_allele_idx += static_cast<uint32_t>(r.alleles.size());
+        tree.snarls.push_back(r.snarl);
+    }
 
     tree.roots.resize(tree.snarls.size());
     std::iota(tree.roots.begin(), tree.roots.end(), 0u);

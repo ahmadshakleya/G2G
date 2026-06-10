@@ -13,6 +13,7 @@
  */
 
 #include <g2g/graph.hpp>
+#include <g2g/decompose.hpp>
 
 #include <cstdint>
 #include <string>
@@ -59,9 +60,11 @@ inline std::string path_sequence(const VariationGraph& vg,
  * Compute allele sequences for a snarl: inner nodes only
  * (source and sink are excluded as shared boundary nodes).
  * Fills out — one string per allele — reusing buffer capacity.
+ * Requires the SnarlTree that owns the allele-path store for this snarl.
  */
 void allele_sequences(const VariationGraph& vg,
                       const Snarl& s,
+                      const SnarlTree& tree,
                       std::vector<std::string>& out);
 
 } // namespace g2g

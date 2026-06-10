@@ -54,16 +54,28 @@ void path_sequence(const VariationGraph& vg,
 
 void allele_sequences(const VariationGraph& vg,
                       const Snarl& s,
+                      const SnarlTree& tree,
                       std::vector<std::string>& out) {
-    // Each allele is a slice [alleles_begin + i*stride, alleles_begin + i*stride + stride)
-    // of path_node_ids; inner nodes only (exclude first and last = source/sink).
-    // TODO: this placeholder assumes allele paths are stored contiguously in
-    //       VariationGraph::path_node_ids.  Fill in once VariationGraph::add_path
-    //       is complete and snarl indexing is wired up.
+    // Port of Python Snarl.allele_sequences(vg):
+    //   for p in self.allele_paths:
+    //       inner = p[1:-1]          # exclude source and sink (shared boundaries)
+    //       results.append(path_sequence(vg, inner) if inner else "")
+    //
+    // The SnarlTree flat store holds full paths (source .. sink inclusive).
+    // We skip the first and last node to get inner nodes only.
+    const uint32_t n = s.allele_count();
     out.clear();
-    out.resize(s.allele_count());
-    // Real implementation: iterate s.alleles_begin..s.alleles_end,
-    // skip first and last NodeId of each allele path, concatenate the rest.
+    out.resize(n);
+    for (uint32_t i = 0; i < n; ++i) {
+        auto full = tree.allele_path(s.alleles_begin, i);
+        out[i].clear();
+        // Inner nodes: indices 1 .. size-2  (skip source at 0, sink at end)
+        if (full.size() > 2) {
+            auto inner = full.subspan(1, full.size() - 2);
+            path_sequence(vg, inner, out[i]);
+        }
+        // If full.size() <= 2, the allele has no inner nodes → empty string
+    }
 }
 
 } // namespace g2g

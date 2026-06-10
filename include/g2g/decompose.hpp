@@ -25,6 +25,7 @@
 #include <optional>   // add this line
 #include <cstdint>
 #include <vector>
+#include <span>
 
 namespace g2g {
 
@@ -40,12 +41,38 @@ namespace g2g {
  * O(N log_B N / B) cache complexity for bottom-up traversal
  * (optimal for comparison-based tree algorithms).
  */
+/**
+ * Per-snarl allele-path record in the flat path store.
+ * Each snarl owns a contiguous block of allele_count() entries in
+ * SnarlTree::allele_paths_data, indexed by
+ *   [allele_offsets[i] .. allele_offsets[i] + allele_lengths[i])
+ * where i is the flat index of the allele (0..allele_count()-1) within
+ * this snarl's block starting at snarl.alleles_begin.
+ * Each entry in allele_paths_data is itself a flat slice of NodeIds.
+ */
 struct SnarlTree {
     std::vector<Snarl>    snarls;     // vEB-ordered
     std::vector<uint32_t> roots;      // indices of top-level snarls
     uint32_t              depth{0};   // tree height
 
+    // Flat allele-path storage (P3-6).
+    // snarls[i].alleles_begin .. snarls[i].alleles_end index into
+    // allele_path_offsets / allele_path_lengths; each allele's NodeIds
+    // live at allele_paths_data[allele_path_offsets[k] .. +allele_path_lengths[k]].
+    std::vector<uint32_t> allele_path_offsets;   // one entry per allele across all snarls
+    std::vector<uint32_t> allele_path_lengths;   // one entry per allele
+    std::vector<NodeId>   allele_paths_data;     // all NodeId sequences concatenated
+
     uint32_t size() const { return static_cast<uint32_t>(snarls.size()); }
+
+    // Return the k-th allele path of snarl with alleles_begin=base.
+    // allele_index is 0-based within the snarl (0 .. allele_count()-1).
+    std::span<const NodeId> allele_path(uint32_t alleles_begin,
+                                         uint32_t allele_index) const {
+        uint32_t flat = alleles_begin + allele_index;
+        return {allele_paths_data.data() + allele_path_offsets[flat],
+                allele_path_lengths[flat]};
+    }
 };
 
 // ── Decomposer ────────────────────────────────────────────────

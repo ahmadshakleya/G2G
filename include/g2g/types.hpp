@@ -85,10 +85,22 @@ struct AnchorMatch {
     float  sim;
 };
 
+// (snarl_source_name, allele_path) pairs unique to one graph
+struct DeltaAllele {
+    std::string          snarl_id;    // "<source>><sink>" string label
+    std::vector<NodeId>  path;        // full allele path (source..sink inclusive)
+    std::string          sequence;    // concatenated inner-node sequence
+};
+
 struct AlignmentResult {
     std::vector<AnchorMatch>    anchors;
     std::vector<SnarlAlignment> snarl_alignments;
     float                       total_score{0.f};
+
+    // Delta graph: alleles present in only one of the two graphs.
+    // Populated by GraphAligner::build_deltas() (P3-7).
+    std::vector<DeltaAllele>    a_only_alleles;   // in A, not in B
+    std::vector<DeltaAllele>    b_only_alleles;   // in B, not in A
 };
 
 } // namespace g2g

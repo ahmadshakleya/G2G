@@ -60,8 +60,10 @@ private:
     SnarlAlignment score_snarl_pair(
         const VariationGraph& ga,
         const VariationGraph& gb,
-        const Snarl& sa,
-        const Snarl& sb) const;
+        const SnarlTree& ta,
+        const SnarlTree& tb,
+        uint32_t ia,
+        uint32_t ib) const;
 
     void build_deltas(const VariationGraph& ga,
                       const VariationGraph& gb,

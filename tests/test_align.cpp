@@ -96,14 +96,18 @@ TEST_F(DemoAlignTest, TotalScorePositive) {
 }
 
 TEST_F(DemoAlignTest, CTTAGGAATCGisAOnly) {
-    // The novel insertion in graph A should appear in a_only_alleles
-    // (no match in graph B — its best candidate has sim < 0.75)
-    // TODO: implement AlignmentResult a_only_alleles lookup once
-    //       build_deltas() is wired up.
-    SUCCEED() << "TODO: check a_only contains CTTAGGAATCG path";
+    // CTTAGGAATCG is in graph A only; its best match in B has sim < 0.75
+    // so it should appear in a_only_alleles after build_deltas().
+    bool found = false;
+    for (const auto& da : result_.a_only_alleles)
+        if (da.sequence == "CTTAGGAATCG") { found = true; break; }
+    EXPECT_TRUE(found) << "CTTAGGAATCG not found in a_only_alleles";
 }
 
 TEST_F(DemoAlignTest, GATTACisBOnly) {
-    // The 1-bp deletion in graph B should appear in b_only_alleles
-    SUCCEED() << "TODO: check b_only contains GATTAC path";
+    // GATTAC is in graph B only (1-bp deletion of GATTACA).
+    bool found = false;
+    for (const auto& db : result_.b_only_alleles)
+        if (db.sequence == "GATTAC") { found = true; break; }
+    EXPECT_TRUE(found) << "GATTAC not found in b_only_alleles";
 }

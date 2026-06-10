@@ -6,6 +6,7 @@
  */
 #include <g2g/graph.hpp>
 #include <stdexcept>
+#include <algorithm>
 
 namespace g2g {
 
@@ -42,6 +43,14 @@ void VariationGraph::finalise() {
 
     // Seal path offsets
     path_offsets.push_back(static_cast<uint32_t>(path_node_ids.size()));
+
+    // Deduplicate edges: GFA files supply both explicit L lines AND implicit
+    // edges from P/W lines (add_path calls add_edge for consecutive nodes).
+    // Without deduplication, node degrees are inflated and the backbone
+    // heuristic in find_anchors produces zero results.
+    std::sort(edge_list_.begin(), edge_list_.end());
+    edge_list_.erase(std::unique(edge_list_.begin(), edge_list_.end()),
+                     edge_list_.end());
 
     uint32_t n = num_nodes();
     // Build out-edge CSR
