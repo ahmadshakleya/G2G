@@ -64,15 +64,6 @@ public:
 private:
     const VariationGraph& vg_;
 
-#ifndef G2G_HAVE_HANDLEGRAPH
-    // Built-in DAG-only back-end (dominator approximation).
-    // Mirrors the Python prototype's SnarlDecomposer.
-    std::optional<NodeId> find_sink(NodeId source,
-                                    const std::vector<NodeId>& topo) const;
-    std::vector<std::vector<NodeId>> enumerate_paths(NodeId source,
-                                                      NodeId sink) const;
-#endif
-
     // Convert a list of snarls (DFS order) to vEB order in-place.
     static void apply_veb_order(SnarlTree& tree);
 
