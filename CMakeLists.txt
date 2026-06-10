@@ -27,6 +27,18 @@ endif()
 
 find_package(Threads REQUIRED)
 
+# Intel oneTBB (libtbb-dev on Ubuntu 22+/24)
+find_library(TBB_LIB tbb)
+find_path(TBB_INCLUDE tbb/task_group.h)
+if(TBB_LIB AND TBB_INCLUDE)
+  message(STATUS "Found TBB: ${TBB_LIB}")
+  set(G2G_HAVE_TBB TRUE)
+  add_compile_definitions(G2G_HAVE_TBB)
+else()
+  message(WARNING "TBB not found — parallel runtime will not be built")
+  set(G2G_HAVE_TBB FALSE)
+endif()
+
 # Optional: detect if libhandlegraph is available
 find_library(HANDLEGRAPH_LIB handlegraph HINTS ENV CONDA_PREFIX PATH_SUFFIXES lib)
 find_path(HANDLEGRAPH_INCLUDE handlegraph/handle.hpp HINTS ENV CONDA_PREFIX PATH_SUFFIXES include)
@@ -47,6 +59,7 @@ set(G2G_SOURCES
   src/matching.cpp
   src/align.cpp
   src/io.cpp
+  src/parallel.cpp
 )
 
 add_library(g2g_lib STATIC ${G2G_SOURCES})
@@ -58,6 +71,11 @@ if(HANDLEGRAPH_LIB)
 endif()
 
 target_link_libraries(g2g_lib PUBLIC Threads::Threads)
+
+if(G2G_HAVE_TBB)
+  target_include_directories(g2g_lib PUBLIC ${TBB_INCLUDE})
+  target_link_libraries(g2g_lib PUBLIC ${TBB_LIB})
+endif()
 
 # ── Executables ───────────────────────────────────────────────
 add_executable(g2g src/main.cpp)
