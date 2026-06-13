@@ -14,7 +14,7 @@ set -euo pipefail
 
 REPO="$HOME/Research/G2G/G2G_Project_Summer_2026"
 CONDA_BASE="$HOME/miniconda3"
-ENV_NAME="phase4"
+ENV_NAME="phase5"
 
 echo "======================================================="
 echo "  G2G Phase 5 — Cluster Setup"
@@ -29,15 +29,15 @@ source "$CONDA_BASE/etc/profile.d/conda.sh"
 conda activate base
 echo "[setup] conda: $(conda --version)"
 
-# ── 2. Create or update the phase4 environment ───────────────────────────────
+# ── 2. Create or update the phase5 environment ───────────────────────────────
 if conda env list | grep -q "^${ENV_NAME} "; then
     echo "[setup] Environment '${ENV_NAME}' exists — updating packages..."
     conda activate "$ENV_NAME"
-    conda install -y -c conda-forge cmake gcc gxx libtbb-devel minimap2
+    conda install -y -c conda-forge cmake cxx-compiler tbb-devel minimap2
 else
     echo "[setup] Creating environment '${ENV_NAME}'..."
     conda create -y -n "$ENV_NAME" -c conda-forge \
-        cmake gcc gxx libtbb-devel minimap2 python=3.11
+        cmake cxx-compiler tbb-devel minimap2 python=3.11
     conda activate "$ENV_NAME"
 fi
 

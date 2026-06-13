@@ -54,7 +54,7 @@ RUNS=5            # repeats per thread count for statistical stability
 THREAD_COUNTS=(1 2 4 8 16 32 64 128)
 
 mkdir -p "$OUTDIR" "$GRAPHDIR" "$LOGDIR"
-source "$HOME/miniconda3/etc/profile.d/conda.sh" && conda activate phase4
+source "$HOME/miniconda3/etc/profile.d/conda.sh" && conda activate phase5
 
 # ── Build ─────────────────────────────────────────────────────────────────────
 cd "$REPO"

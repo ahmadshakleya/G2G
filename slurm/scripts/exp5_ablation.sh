@@ -62,7 +62,7 @@ LOGDIR="$REPO/slurm/logs"
 RUNS=5
 
 mkdir -p "$OUTDIR" "$GRAPHDIR" "$LOGDIR"
-source "$HOME/miniconda3/etc/profile.d/conda.sh" && conda activate phase4
+source "$HOME/miniconda3/etc/profile.d/conda.sh" && conda activate phase5
 
 RESULTS="$OUTDIR/ablation_results.tsv"
 echo -e "ablation\tvariant\tparam\trun\twall_sec\tl3_miss_rate" > "$RESULTS"

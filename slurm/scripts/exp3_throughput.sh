@@ -47,7 +47,7 @@ RUNS=3          # repeat each measurement this many times for stability
 mkdir -p "$OUTDIR" "$GRAPHDIR" "$LOGDIR"
 
 # Activate the conda environment that has cmake, gcc, tbb, minimap2
-source "$HOME/miniconda3/etc/profile.d/conda.sh" && conda activate phase4
+source "$HOME/miniconda3/etc/profile.d/conda.sh" && conda activate phase5
 
 # Rebuild in Release mode with the cluster compiler
 cd "$REPO"
