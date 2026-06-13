@@ -38,7 +38,7 @@
 # ── Environment ───────────────────────────────────────────────────────────────
 set -euo pipefail
 
-REPO="$HOME/G2G"
+REPO="$HOME/Research/G2G/G2G_Project_Summer_2026"
 BUILD="$REPO/build"
 G2G="$BUILD/g2g"
 SYNTH_GEN="$REPO/slurm/synth/gen_scaling_gfa.py"
@@ -54,7 +54,7 @@ RUNS=5            # repeats per thread count for statistical stability
 THREAD_COUNTS=(1 2 4 8 16 32 64 128)
 
 mkdir -p "$OUTDIR" "$GRAPHDIR" "$LOGDIR"
-mamba activate phase4
+source "$HOME/miniconda3/etc/profile.d/conda.sh" && conda activate phase4
 
 # ── Build ─────────────────────────────────────────────────────────────────────
 cd "$REPO"

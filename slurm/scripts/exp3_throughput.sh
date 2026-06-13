@@ -35,7 +35,7 @@
 # ── Environment ───────────────────────────────────────────────────────────────
 set -euo pipefail
 
-REPO="$HOME/G2G"
+REPO="$HOME/Research/G2G/G2G_Project_Summer_2026"
 BUILD="$REPO/build"
 G2G="$BUILD/g2g"
 SYNTH_GEN="$REPO/slurm/synth/gen_scaling_gfa.py"
@@ -47,7 +47,7 @@ RUNS=3          # repeat each measurement this many times for stability
 mkdir -p "$OUTDIR" "$GRAPHDIR" "$LOGDIR"
 
 # Activate the conda environment that has cmake, gcc, tbb, minimap2
-mamba activate phase4
+source "$HOME/miniconda3/etc/profile.d/conda.sh" && conda activate phase4
 
 # Rebuild in Release mode with the cluster compiler
 cd "$REPO"

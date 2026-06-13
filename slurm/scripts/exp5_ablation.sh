@@ -53,7 +53,7 @@
 
 set -euo pipefail
 
-REPO="$HOME/G2G"
+REPO="$HOME/Research/G2G/G2G_Project_Summer_2026"
 BUILD_BASE="$REPO/build"
 SYNTH_GEN="$REPO/slurm/synth/gen_scaling_gfa.py"
 OUTDIR="$REPO/results/exp5"
@@ -62,7 +62,7 @@ LOGDIR="$REPO/slurm/logs"
 RUNS=5
 
 mkdir -p "$OUTDIR" "$GRAPHDIR" "$LOGDIR"
-mamba activate phase4
+source "$HOME/miniconda3/etc/profile.d/conda.sh" && conda activate phase4
 
 RESULTS="$OUTDIR/ablation_results.tsv"
 echo -e "ablation\tvariant\tparam\trun\twall_sec\tl3_miss_rate" > "$RESULTS"
