@@ -166,7 +166,11 @@ std::vector<AnchorMatch> find_anchors(const VariationGraph& ga,
     std::vector<AnchorMatch> anchors;
     std::vector<bool> used_b(gb.num_nodes(), false);
 
-    if (naive_work <= kNaiveThreshold) {
+    if (naive_work <= kNaiveThreshold
+#ifdef G2G_DISABLE_MINIMIZER_INDEX
+        || true   // ablation A4: always use naive path
+#endif
+    ) {
         // ── Naïve O(|backbone_a| * |backbone_b|) scan ─────────
         for (NodeId na : backbone_a) {
             float  best_sim = params.min_sim - 1e-9f;

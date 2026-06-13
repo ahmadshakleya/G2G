@@ -318,8 +318,11 @@ SnarlTree SnarlDecomposer::decompose() const {
     tree.depth = 1;
 
     // P3-4: annotate subtree work, then apply vEB layout
+    // G2G_DISABLE_VEB=1 skips the vEB reorder (BFS layout) for ablation Exp5-A1.
     annotate_work(tree);
+#ifndef G2G_DISABLE_VEB
     apply_veb_order(tree);
+#endif
 
     return tree;
 }

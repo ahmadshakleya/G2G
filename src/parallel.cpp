@@ -53,6 +53,7 @@
 #include <tbb/task_arena.h>
 #include <tbb/task_group.h>
 #include <tbb/concurrent_priority_queue.h>
+#include <tbb/concurrent_queue.h>          // used by G2G_STEAL_RANDOM ablation
 
 #include <algorithm>
 #include <cassert>
@@ -274,8 +275,12 @@ ParallelAligner::Result ParallelAligner::align_snarls(
     std::atomic<uint64_t>  tasks_executed{0};
     std::atomic<uint64_t>  tasks_ready_peak{0};
 
-    // Shared ready queue (steal-largest)
+    // Shared ready queue (steal-largest, or FIFO if G2G_STEAL_RANDOM=1 for ablation)
+#ifdef G2G_STEAL_RANDOM
+    tbb::concurrent_queue<ReadyEntry> ready_queue;
+#else
     tbb::concurrent_priority_queue<ReadyEntry, CmpPriority> ready_queue;
+#endif
 
     // Seed with all tasks that have dep_count == 0
     for (uint32_t ti = 0; ti < ntasks; ++ti) {
