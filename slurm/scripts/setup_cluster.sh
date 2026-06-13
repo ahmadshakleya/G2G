@@ -33,10 +33,11 @@ echo "[setup] conda: $(conda --version)"
 if conda env list | grep -q "^${ENV_NAME} "; then
     echo "[setup] Environment '${ENV_NAME}' exists — updating packages..."
     conda activate "$ENV_NAME"
-    conda install -y -c conda-forge cmake cxx-compiler tbb-devel minimap2
+    conda install -y -c conda-forge -c bioconda cmake cxx-compiler tbb-devel minimap2
 else
     echo "[setup] Creating environment '${ENV_NAME}'..."
-    conda create -y -n "$ENV_NAME" -c conda-forge \
+    conda create -y -n "$ENV_NAME" \
+        -c conda-forge -c bioconda \
         cmake cxx-compiler tbb-devel minimap2 python=3.11
     conda activate "$ENV_NAME"
 fi
